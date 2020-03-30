@@ -1,0 +1,247 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color:#222;
+    
+}
+
+
+
+.navbar{
+    padding: 0.8rem ;
+}
+.navbar-nav li{
+    padding-right: 20px;
+}
+.nav-link{
+    font-size: 1.1em !important;
+}
+
+
+.carousel-inner{
+    position: relative;
+}
+.carousel-inner img {
+    width: 100%;
+    max-height: 100%;
+}
+/*widocznosc tylu zdjecia przy zmianie */
+.carousel-item{
+    transition: transform 0.5s ease;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+}
+.carousel-caption {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+.carousel-caption h1{
+    font-size: 300%;
+    text-shadow: 1px 1px 15px #000;
+    margin-bottom: 2rem;
+}
+.carousel-caption h5{
+    font-size: 150%;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.padding{
+    padding-bottom: 2rem;
+}
+.about{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.about hr{
+    border-top: 2px solid #2F4F4F;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skills h2{
+     font-weight: 700;
+     padding: .8rem;
+}
+.skills h3{
+    color: #2F4F4F;
+    padding: .8rem
+}
+.skills ul{
+    list-style-type: none;
+   padding: .8rem;
+}
+.skills li{
+   padding: 10px;
+}
+
+.card-body a{
+    margin: 0 40%;
+}
+.connect {
+    position: relative;
+}
+.connect a{
+    position: absolute;
+    left:70%;
+    top: 40%;   
+}
+
+
+.brand img{
+    margin: 2rem;
+}
+.social{
+    margin-top: .8rem;
+}
+.social img{
+
+    transform: scale(.5);
+}
+.social img:hover {
+    transition: .3s ease-in-out;
+    transform: scale(.7);
+}
+.footer{
+
+    background-color: rgba(152, 251, 152, 0.452);
+    padding: 1.1rem;
+}
+
+
+
+
+
+
+/* Podstrona */
+.back {
+    color: #222;
+    font-size: 1.1rem
+ 
+}
+.back:hover{
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+
+}
+
+.photo{
+    position: relative;
+}
+.photo img {
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 1.1rem;
+    
+    
+}
+.photo-content {
+    
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+.photo-content p{
+   
+    font-size: 2.6rem;
+    color: #fff;
+    text-shadow: 1px 1px 15px #000;
+    text-align: center;
+}
+
+
+
+
+
+.container-form{
+    
+    margin-left: .9rem;
+}
+.row{
+    margin-bottom: .5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#projekt{
+    resize: none;
+}
+input[type=text],
+input[type=email],
+input[type=tel] {
+    width: 300px;
+    margin-top: .5rem;
+    background-color: #F0FFF0;
+    color: #666;
+    border: 2px solid #E6E6FA;
+    border-radius: 5px;
+    padding: 5px; 
+    outline: none;
+    display: block;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+    color: #222;
+    -webkit-box-shadow: 2px 2px 8px 1px rgba(173, 216, 230, 0.9);
+    -moz-box-shadow: 2px 2px 8px 1px rgba(173, 216, 230, 0.9);
+    box-shadow: 2px 2px 8px 1px rgba(173, 216, 230, 0.9);
+}
+input[type=submit] {
+    margin-top: .5rem;
+    width: 100px;
+}
+
+textarea{
+    background-color: #F0FFF0;
+    color: #666;
+    border: 2px solid #E6E6FA;
+    border-radius: 5px;
+    padding: 5px; 
+    outline: none;  
+    
+}
+textarea:focus{
+    -webkit-box-shadow: 2px 2px 8px 1px rgba(173, 216, 230, 0.9);
+    -moz-box-shadow: 2px 2px 8px 1px rgba(173, 216, 230, 0.9);
+    box-shadow: 2px 2px 8px 1px rgba(173, 216, 230, 0.9);
+}
+
+@media (max-width: 768px) {
+    textarea{
+        width: 300px;   
+    }
+}
+@media (max-width: 768px) {
+    .carousel-caption h1{
+        font-size: 200%;
+        text-shadow: 1px 1px 15px #000;
+        margin-bottom: 2rem;
+    }
+    .carousel-caption h5{
+        font-size: 100%;
+        text-shadow: 1px 1px 10px #000;
+    }
+    .photo-content p{
+   
+        font-size: 2rem;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-caption h1{
+        font-size: 180%;
+        text-shadow: 1px 1px 15px #000;
+        margin-bottom: 1.1rem;
+    }
+    .carousel-caption h5{
+        font-size: 100%;
+        text-shadow: 1px 1px 10px #000;
+    }
+    .photo-content p{
+   
+        font-size: 1.5rem;
+    }
+}
