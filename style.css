@@ -24,7 +24,7 @@ html, body{
 }
 .carousel-inner img {
     width: 100%;
-    max-height: 100%;
+    max-height: 100vh;
 }
 /*widocznosc tylu zdjecia przy zmianie */
 .carousel-item{
@@ -39,18 +39,38 @@ html, body{
     
 }
 .carousel-caption h1{
-    font-size: 300%;
+    font-size: 400%;
     text-shadow: 1px 1px 15px #000;
     margin-bottom: 2rem;
 }
-.carousel-caption h5{
-    font-size: 150%;
+.carousel-caption h3{
+    font-size: 200%;
     text-shadow: 1px 1px 10px #000;
 }
 
 .padding{
     padding-bottom: 2rem;
 }
+
+.container-plants{
+    margin: 20px auto;
+}
+
+.testimonial_subtitle{
+    color: #0aaa7a;
+    font-size: 12px;
+}
+  .testimonial_btn{
+    background-color: #373d4b !important;
+    color: #fff !important;
+ }
+ .seprator {
+    height: 2px;
+    width: 56px;
+    background-color: #0aaa7a;
+    margin: 7px 0 10px 0;
+}
+
 .about{
     width: 75%;
     margin: 0 auto;
@@ -61,22 +81,6 @@ html, body{
     width: 95%;
     margin-top: .3rem;
     margin-bottom: 1.5rem;
-}
-
-.skills h2{
-     font-weight: 700;
-     padding: .8rem;
-}
-.skills h3{
-    color: #2F4F4F;
-    padding: .8rem
-}
-.skills ul{
-    list-style-type: none;
-   padding: .8rem;
-}
-.skills li{
-   padding: 10px;
 }
 
 .card-body a{
@@ -98,17 +102,16 @@ html, body{
 .social{
     margin-top: .8rem;
 }
-.social img{
-
-    transform: scale(.5);
+.social i {
+    margin: 20px;
+    transform: scale(3);
+    color: #373d4b;
 }
-.social img:hover {
+.social i:hover {
     transition: .3s ease-in-out;
-    transform: scale(.7);
+    transform: scale(3.7);
 }
 .footer{
-
-    background-color: rgba(152, 251, 152, 0.452);
     padding: 1.1rem;
 }
 
@@ -131,14 +134,15 @@ html, body{
 
 .photo{
     position: relative;
+
 }
 .photo img {
     width: 100%;
-    max-height: 100%;
+    max-height: 100vh;
     margin-bottom: 1.1rem;
     
-    
 }
+
 .photo-content {
     
     position: absolute;
@@ -154,13 +158,9 @@ html, body{
     text-align: center;
 }
 
-
-
-
-
 .container-form{
     
-    margin-left: .9rem;
+    margin-left: 2rem;
 }
 .row{
     margin-bottom: .5rem;
@@ -191,7 +191,6 @@ input[type=tel]:focus {
     box-shadow: 2px 2px 8px 1px rgba(173, 216, 230, 0.9);
 }
 input[type=submit] {
-    margin-top: .5rem;
     width: 100px;
 }
 
@@ -210,6 +209,23 @@ textarea:focus{
     box-shadow: 2px 2px 8px 1px rgba(173, 216, 230, 0.9);
 }
 
+
+@media (min-width: 992px) {
+    textarea{
+        margin-left: 5rem;   
+    }
+}
+@media (min-width: 992px) {
+    .opis {
+        margin-left: 5rem;   
+    }
+}
+@media (min-width: 992px) {
+    input[type=submit] {
+        margin-left: 5rem;   
+        margin-top: .8rem; 
+    }
+}
 @media (max-width: 768px) {
     textarea{
         width: 300px;   
@@ -226,7 +242,6 @@ textarea:focus{
         text-shadow: 1px 1px 10px #000;
     }
     .photo-content p{
-   
         font-size: 2rem;
     }
 }
@@ -236,12 +251,11 @@ textarea:focus{
         text-shadow: 1px 1px 15px #000;
         margin-bottom: 1.1rem;
     }
-    .carousel-caption h5{
+    .carousel-caption h3{
         font-size: 100%;
         text-shadow: 1px 1px 10px #000;
     }
     .photo-content p{
-   
         font-size: 1.5rem;
     }
 }

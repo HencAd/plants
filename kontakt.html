@@ -15,24 +15,29 @@
         <!--Navigation-->
             <nav class="navbar navbar-light bg-white " id="up">
                 <div class="container-fluid content">
-                    <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" width="39" height="46"  alt="logo">Adrianna Henc</a>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" width="39" height="46"  alt="logo">Plants</a>
                     <a class=" back" href="index.html">Powrót</a>
                 </div>
             </nav>
 
             <!--Photo-->
             <div class="container-fluid">
-            <div class="photo">
-                <img src="img/tło7.jpg">
-                <div class="photo-content">
-                    <p>Już nie mogę się doczekć, aby dowiedzieć się o Twoim projekcie. Gotowy, żeby zacząć?</p>
+                <div class="photo">
+                    <img src="img/tło7.jpg">
+                    <div class="photo-content">
+                        <p>Już nie mogę się doczekć, aby dowiedzieć się o Twoim projekcie. Gotowy, żeby zacząć?</p>
+                    </div>
                 </div>
-            </div>
-            </div>
+                </div>
+            
             
         <!--Form-->
+       
+        
         <form action="" method="post">
             <div class="container-form">
+                <div class="row padding">
+            <div class="col-lg-3">
             <div class="row">
                 <div class="col-12"><label>Imię:<input type="text" name="imie"></label></div>
             </div>
@@ -45,16 +50,18 @@
             <div class="row">
                 <div class="col-12"><label>Numer telefonu:<input type="tel" name="telefon" placeholder="000-000-000"></label></div>
             </div>
+    </div>
+        <div class="col-lg-9">
             <div class="row">
-                <div class="col-12"><label for="projekt">Opis projektu:</label></div>
-                <div class="col-12"><textarea name="projekt" id="projekt" rows="6" cols="60"></textarea></div>
+                <div class="col-10 opis"><label for="projekt">Opis projektu:</label></div>
+                <div class="col-10"><textarea name="projekt" id="projekt" rows="6" cols="60"></textarea></div>
+                    <div class="col-12"><input type="submit" value="Wyślij" class="btn btn-dark"></div>
             </div>
-            <div class="row ">
-                <div class="col-12"><input type="submit" value="Wyślij" class="btn btn-dark"></div>
-            </div>
+        </div>
+    </div>
             </div>
         </form>
-
+        
 
     </body>
 </html>
